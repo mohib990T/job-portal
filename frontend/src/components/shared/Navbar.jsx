@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const logOutHandler = async (e) => {
     try {
-      const res = await axios.get(`${USER_API_END_POINT}/logout`, {
+      const res = await axios.get(`https://job-portal-y9gc.onrender.com/api/v1/user/logout`, {
         withCredentials: true,
       });
       if (res.data.success) {

@@ -5,7 +5,6 @@ import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { COMPANY_API_END_POINT } from "@/utils/constant";
 import { toast } from "sonner";
 import { useDispatch } from "react-redux";
 import { setSingleCompany } from "@/redux/slices/companySlice";
@@ -18,7 +17,7 @@ const CreateCompany = () => {
   const registerNewCompany = async () => {
     try {
       const res = await axios.post(
-        `${COMPANY_API_END_POINT}/register`,
+        `https://job-portal-y9gc.onrender.com/api/v1/company/register`,
         { companyName },
         {
           headers: {
