@@ -1,8 +1,9 @@
-import express from "express";
+import express, { urlencoded } from "express";
+import connectDB from "./utils/db.js";
+import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import cors from "cors";
-import dotenv from "dotenv";
-import connectDB from "./utils/db.js";
+import bodyParser from "body-parser";
 import userRouter from "./routes/userRoute.js";
 import companyRouter from "./routes/companyRoute.js";
 import jobRouter from "./routes/jobRoute.js";
@@ -17,7 +18,8 @@ const _dirname = path.resolve();
 
 // middleware
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(urlencoded({extended:true}))
 app.use(cookieParser());
 const corsOptions = {
   origin: "https://job-portal-y9gc.onrender.com",
