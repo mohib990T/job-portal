@@ -22,7 +22,7 @@ const JobDescription = () => {
   const applyJobHandler = async () => {
     try {
       const res = await axios.get(
-        `https://job-portal-y9gc.onrender.com/api/v1/application/apply/${jobId}`,
+        `https://job-portal-v7a6.onrender.com/api/v1/application/apply/${jobId}`,
         {
           withCredentials: true,
         }
@@ -45,7 +45,7 @@ const JobDescription = () => {
   useEffect(() => {
     const fetchSingleJob = async () => {
       try {
-        const res = await axios.get(`https://job-portal-y9gc.onrender.com/api/v1/job/get/${jobId}`, {
+        const res = await axios.get(`https://job-portal-v7a6.onrender.com/api/v1/job/get/${jobId}`, {
           withCredentials: true,
         });
         if (res.data.success) {

@@ -9,7 +9,7 @@ const useGetAppliedJobs = () => {
   useEffect(() => {
     const fetchAppliedJobs = async () => {
       try {
-        const res = await axios.get(`https://job-portal-y9gc.onrender.com/api/v1/application/get`, {
+        const res = await axios.get(`https://job-portal-v7a6.onrender.com/api/v1/application/get`, {
           withCredentials: true,
         });
         if (res.data.success) {

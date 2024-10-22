@@ -22,7 +22,7 @@ const ApplicantsTable = () => {
   const statusHandler = async (status, id) => {
     try {
       const res = await axios.post(
-        `https://job-portal-y9gc.onrender.com/api/v1/application/status/${id}/update`,
+        `https://job-portal-v7a6.onrender.com/api/v1/application/status/${id}/update`,
         { status },
         { withCredentials: true }
       );

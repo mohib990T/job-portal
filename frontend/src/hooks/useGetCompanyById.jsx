@@ -9,7 +9,7 @@ const useGetCompanyById = (companyId) => {
     const fetchSingleCompany = async () => {
       try {
         const res = await axios.get(
-          `https://job-portal-y9gc.onrender.com/api/v1/company/get/${companyId}`,
+          `https://job-portal-v7a6.onrender.com/api/v1/company/get/${companyId}`,
           {
             withCredentials: true,
           }

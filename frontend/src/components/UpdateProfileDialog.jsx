@@ -52,7 +52,7 @@ const UpdateProfileDialogue = ({ open, setOpen }) => {
     try {
       setLoading(true)
       const res = await axios.post(
-        `https://job-portal-y9gc.onrender.com/api/v1/user/profile/update`,
+        `https://job-portal-v7a6.onrender.com/api/v1/user/profile/update`,
         formData,
         {
           headers: {

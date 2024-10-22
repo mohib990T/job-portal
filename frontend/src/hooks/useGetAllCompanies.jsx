@@ -8,7 +8,7 @@ const useGetAllCompanies = () => {
   useEffect(() => {
     const fetchCompanies = async () => {
       try {
-        const res = await axios.get(`https://job-portal-y9gc.onrender.com/api/v1/company/get`, {
+        const res = await axios.get(`https://job-portal-v7a6.onrender.com/api/v1/company/get`, {
           withCredentials: true,
         });
         if (res.data.success) {
